@@ -7,54 +7,32 @@ int main(void)
         switch(n)
         {
                 case 1:
-                printf("周一");
-                break;
+                    printf("周一");
+                    break;
                 case 2:
-                printf("周二");
-                break;
+                    printf("周二");
+                    break;
                 case 3:
-                printf("周三");
-                break;
+                    printf("周三");
+                    break;
                 case 4:
-                printf("周四");
-                break;
+                    printf("周四");
+                    break;
                 case 5:
-                printf("周五");
-                break;
+                    printf("周五");
+                    break;
                 case 6:
-                printf("周六");
-                break;
+                    printf("周六");
+                    break;
                 case 7:
-                printf("周日");
-                break;
+                    printf("周日");
+                    break;
+                default:
+                    printf("Errow!");
+                    break;
         }
-       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        return 0;
+}
         /* int choice; */
         /* int value; */
         /* printf("Convert:\n"); */
@@ -87,5 +65,3 @@ int main(void)
         /*                 printf("%o in decimal is:%d\n",value,value); */
         /*                 break; */
         /* } */
-        return 0;
-}
