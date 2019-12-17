@@ -10,18 +10,6 @@ int main(void)
                 i ++;
         }
         printf("%d",s);
-
-        
-
-
-
-
-
-
-
-
-
-
         /* int s,i; */
         /* s = 0; */
         /* for( i = 0; i <= 100; i ++) */
