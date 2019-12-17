@@ -10,8 +10,7 @@ int main(void)
     else if ( 3 <= x && x <= 4 )
         y = fabs(x) + 2;
     else
-        y = sin(x*x);
+        y = sin(pow(x, 2));
     printf("x = %f, y = %f\n", x, y);
-    system("pause");
     return 0;
 }

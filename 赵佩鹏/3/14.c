@@ -17,6 +17,5 @@ int main(void)
         y = 3 * x - 11;
     }
     printf("y = %.3f\n", y);
-    system("pause");
     return 0;
 }
