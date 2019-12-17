@@ -5,38 +5,38 @@ int main(void)
         int min_primer; // 最小的质数
         int n=0;
         scanf("%d", &num);
-        for ( min_primer = 2;  min_primer * min_primer < num; min_primer ++ )
+        for ( min_primer = 2;  min_primer * min_primer <= num; min_primer ++ )
         {
-                if ( (num % min_primer) == 0 )
+                if ( (num % min_primer) == 0 ) // 找到最小质数
                 {
                         /* printf("primer = %d", min_primer); */
-                        n=min_primer;
+                        /* n=min_primer; */
                         break;
                 }
         }
-        if ( n!= 0)
+        if ( min_primer != 0) // 判断有没有找出最小质数
         {
-                printf("%d=",num);
-                while ( num!=n )
+                printf("%d = ",num);
+                while ( num != min_primer)
                 {
-                        if ( num%n==0 )
+                        if ( num % min_primer == 0 )
                         {
-                                printf("%d*",n);
-                                num=num/n;       
+                                printf("%d * ",min_primer);
+                                num = num / min_primer;       
                         }
                         else
-                                n++;
-                        if ( num==n )
+                                min_primer ++;
+                        if ( num == min_primer )
                         {
-                            printf("%d",n);
+                            printf("%d",min_primer);
                         }
                 }
-                
         }
         else
         {
                 printf("meiyou zhi yinshu");
         }
         /* printf("min_primer = %d", min_primer); */
+        putchar('\n');
         return 0;
 }
