@@ -7,9 +7,11 @@ void main()
                 x ++;
                 for( j = 0 ; j < 3 ;j ++)
                 {
-                        if(j%2)  continue;
-                        x ++;
-                }
+                        if(j%2)  
+                        {
+                                continue;//当判断为假直接跳出
+                                x ++;
+                        }
                 x ++;
         }
         printf("x = %d\n",x);

@@ -11,14 +11,13 @@ void main()
     while ( ( c = getchar() ) != '#') /* 统计从终端输入的大写字母个数*/
     {
         if (isupper(c))
-            num[c - 65] ___2___;
+            num[c - 65] += 1;
     } 
     for (i = 0; i < 26; i++) /* 输出大写字母和该字母的个数*/
     {
         if (num[i])
         {
-            printf("%c:%d\n", i ___3___, num[i]);
+            printf("%c:%d\n", i + 65, num[i]);
         }
     }
-    system("pause");      
 }
