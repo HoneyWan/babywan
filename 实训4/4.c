@@ -7,7 +7,7 @@ void main()
         x++;
         for (j = 0; j < 3; j++)
         {
-            if (j % 2)
+            if (j % 2) // j = 1的时候不执行x++
                 continue;
             x++;
         }
