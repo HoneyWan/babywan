@@ -4,7 +4,7 @@ int main(void)
 {
     int peach = 1;
     int index;
-    for ( index = 10; index > 0; index -- )
+    for ( index = 0; index < 10; index ++ )
     {
         peach = peach + 1;
         peach = peach * 2;
