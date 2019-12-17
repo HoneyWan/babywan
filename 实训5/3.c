@@ -8,6 +8,7 @@ void main()
         {7, 8, 9}
     };
     int i,j;
+    int sum2 = 0;
     int sum = 0;
     for ( i = 0; i < 3; i ++)
     {
@@ -16,6 +17,13 @@ void main()
             sum = sum + a[i][j];
         }
     }
-    printf("对角线之和是%d\n", sum);
-    system("pause");
+    for ( i = 2; i >= 0; i -- )
+    {
+        for ( j = i; j <= i; j ++ )
+        {
+                sum2 = sum2 + a[j][i];
+        }
+    }
+    
+    printf("对角线之和是%d 和 %d\n", sum, sum2);
 }
