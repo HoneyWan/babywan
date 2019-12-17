@@ -5,7 +5,7 @@ void main()
     scanf("%ld", &data);
     while (data)
     {
-        printf("%ld,", data % 10);
+        printf("%ld,", data % 10); // 反序输出
         data = data / 10;
     }
 }
