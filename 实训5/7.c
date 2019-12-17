@@ -26,5 +26,4 @@ void main()
         }
     printf("a=%s\n", a);
     printf("b=%s\n", b);
-    system("pause");
 }

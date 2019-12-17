@@ -12,6 +12,5 @@ void main()
     for (i = 0; i <= 4; i++)
         sum += a[i];
     printf("sum = %d \n", sum);
-    system("pause");
 }
 // 输入数据时错误
