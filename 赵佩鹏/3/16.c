@@ -31,6 +31,5 @@ int main(void)
             printf("Error!");
             break;
     }
-    system("pause");
     return 0;
 }

@@ -1,4 +1,4 @@
-// ÊµÑµ4µÚ6Ìâºï×Ó³ÔÌÒ
+
 #include <stdio.h>
 int main(void)
 {
@@ -9,7 +9,6 @@ int main(void)
         peach = peach + 1;
         peach = peach * 2;
     }
-    printf("%dÌìÇ°ÓĞ%d¸öÌÒ×Ó\n", index, peach);
-    system("pause");
+    printf("%då¤©å‰æœ‰%dä¸ªæ¡ƒå­\n", index, peach);
     return 0;
 }

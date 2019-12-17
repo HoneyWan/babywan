@@ -33,5 +33,4 @@ void main()
         printf("%o in decimal is:%d\n", value, value);
         break;
     }
-    system("pause");
 }
