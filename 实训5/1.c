@@ -23,7 +23,6 @@ void main()
     // printf("av=%f\n",av)；
     // 改正后
     printf("av = %f\n", (float)av / 10.0);
-    system("pause");
 }
 // 有中文分号，已改正
 // 输入的scanf语句少了&符号，已改正
