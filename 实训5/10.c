@@ -5,7 +5,6 @@ void main()
 {
     int num[26], i;
     char c;
-    'A';
     for (i = 0; i < 26; i++)
         num[i] = 0;
     while ( ( c = getchar() ) /*(1)*/!= '#') /* 统计从终端输入的大写字母个数*/
