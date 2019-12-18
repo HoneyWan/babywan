@@ -14,14 +14,14 @@ void main()
     {
         for ( j = i; j <= i; j ++ )
         {
-            sum = sum + a[i][j];
+            sum = sum + a[i][j]; // 9+5+1
         }
     }
     for ( i = 2; i >= 0; i -- )
     {
         for ( j = i; j <= i; j ++ )
         {
-                sum2 = sum2 + a[j][i];
+                sum2 = sum2 + a[j][i]; // 7+5+3
         }
     }
     

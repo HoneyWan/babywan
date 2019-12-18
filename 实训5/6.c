@@ -8,16 +8,16 @@ void main()
     scanf("%f", &a);
     while ( a >= 0.0 && a <= 100.00 )
     {
-        sum = sum + a;
+        sum += a; // 累加成绩
         x[n] = a;
         n ++;
         scanf("%f", &a);
     }
-    ave = sum / n;
+    ave = sum / n; // 计算平均成绩
     printf("ave = %f\n", ave);
     for ( i = 0; i < n; i ++ )
     {
-        if ( x[i] < ave )
+        if ( x[i] < ave ) // 找出低于平均成绩的数，打印
         {
             printf("%f\n", x[i] );
         }

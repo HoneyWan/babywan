@@ -4,7 +4,7 @@ void main()
     int i, a[5], sum = 0;
     // 之前
     // scanf("%d,%d,%d,%d,%d", a);
-    // 改正后
+    // 改正后 数组进行单个元素处理
     for ( i = 0; i < 5; i ++ )
     {
         scanf("%d", &a[i]);

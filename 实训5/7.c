@@ -4,7 +4,8 @@ void main()
 {
     char a[10], b[10];
     int c, d, k, ch;
-    // 之前
+    // 之前 读入字符串输入空格时发生错误
+    // 因为scanf遇到空格等字符就停止读入了
     // scanf("%s", a);
     // scanf("%s", b);
     // 改正后
@@ -18,8 +19,6 @@ void main()
     if (c > d)
         for (k = 0; k < c; k++)
         {
-            //abc 123   a[]
-            //china     b[]
             ch = a[k];
             a[k] = b[k];
             b[k] = ch;
