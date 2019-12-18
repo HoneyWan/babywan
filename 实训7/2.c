@@ -4,11 +4,33 @@
 #include <stdio.h>
 int main(void)
 {
-    int year, month, day;
+    int year, month, day, days = 0;
+    int a[12] = { 31, 28, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+    int b[12] = { 31, 29, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
     printf("请输入一个日期（格式示例2019 03 05）：");
     scanf("%d%d%d", &year, &month, &day); // 输入日期
-    //if ( ) // 判断闰年
+    if ( month <= 2 )
+    {
+        days = 31 + day;
+    }
+    else
+    {
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) // 判断闰年
+        {
+            // 闰年用数组b
+            for ( int i = 0; i < month; i ++ )
+            {
+                days = days + b[i];
+            }
+            days = days + day;
+        }
+        else
+        {
+            // 平年
+        }
+    }
     //printf("year = %d, month = %d, day = %d\n", year, month, day );
+    printf("Days = %d\n", days);
     system("pause");
     return 0;
 }
