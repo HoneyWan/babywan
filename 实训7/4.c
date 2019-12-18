@@ -7,24 +7,23 @@ int main(void)
     int b[6];
     int i, j;
     int sum = 0;
-    float result;
-    for ( i = 1; i <= 30; i ++ )
+    for ( i = 1; i <= 30; i ++ ) // 进行赋值
     {
         a[i-1] = i * 2;
     }
     putchar('\n');
-    for ( i = 0; i < 6; i ++ ) // 计算5个数的和，平均值
+    i = 0;
+    for ( j = 0; j < 30; j ++ ) // 累加数组a，计算平均值
     {
-        for ( j = 0; j < 30; j ++ )
+        sum = sum + a[j];
+        if ( (j + 1 ) % 5 == 0)
         {
-            sum = sum + a[i];
-            if ( i%5 == 0)
-            {
-                b[i] = sum;
-                sum = 0;
-            }
+            b[i] = sum / 5;
+            i ++;
+            sum = 0;
         }
     }
+    printf("每5个数的平均值分别是：");
     for ( i = 0; i < 6; i ++ )
     {
         printf("%d ", b[i] );
