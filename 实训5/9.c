@@ -10,7 +10,7 @@ void main()
     i = 0; //  (1)第一个空
     while ( (str1[i] == str2[i] ) && ( str1[i] != '\0' ) ) // (2)第二个空str1[i] != ___
         i++;
-    s =  str2[i-1] - str1[i]; // (3)第三个空s = ___
+    s =  str2[i] - str1[i]; // (3)第三个空s = ___
     printf("%d\n", s);
     system("pause");
 }

@@ -11,7 +11,7 @@ void main()
     for (i = 0; i < N; i++)
     {
         printf("%d ", a[i]);
-        if (i % 3 == 0)
+        if (i % 3 == 2)
             printf("\n");
     }
     // 之前
@@ -22,7 +22,7 @@ void main()
     // 之前
     // printf("av=%f\n",av)；
     // 改正后
-    printf("av = %f\n", (float)av / 10.0);
+    printf("\nav = %f\n", (float)av / 10.0);
 }
 // 有中文分号，已改正
 // 输入的scanf语句少了&符号，已改正
