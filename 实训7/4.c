@@ -18,16 +18,15 @@ int main(void)
         sum = sum + a[j];
         if ( (j + 1 ) % 5 == 0)
         {
-            b[i] = sum / 5;
+            b[i] = sum / 5; // 赋值给另一个数组
             i ++;
-            sum = 0;
+            sum = 0; // 清空累加值，进行下一次累加
         }
     }
-    printf("每5个数的平均值分别是：");
+    printf("每5个数的平均值分别是："); // 输出
     for ( i = 0; i < 6; i ++ )
     {
         printf("%d ", b[i] );
     }
-    system("pause");
     return 0;
 }

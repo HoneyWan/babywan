@@ -17,6 +17,7 @@ int main(void)
     {
         scanf("%d", &b[i]);
     }
+    // 调用函数
     ave1 = average( a, 5 );
     ave2 = average( b, 7 );
     printf("第一个小组学生的平均成绩：%f\n第二个小组学生的平均成绩：%f\n", ave1, ave2);
@@ -26,10 +27,10 @@ float average( int c[], int n )
 {
     float ave = 0.0;
     int i, sum;
-    for ( i = 0; i < n; i ++ )
+    for ( i = 0; i < n; i ++ ) // 累加数值
     {
         sum = sum + c[i];
     }
-    ave = (float) sum / n;
-    return ave;
+    ave = (float) sum / n; // 计算平均值
+    return ave; // 返回平均值
 }

@@ -5,7 +5,7 @@ int main(void)
 {
     int i, u, k;
     int num, count = 0;
-    for ( i = 1; i <= 4; i ++ )
+    for ( i = 1; i <= 4; i ++ ) // 使用循环找数
     {
         for ( u = 1; u <= 4; u ++ )
         {
@@ -21,6 +21,5 @@ int main(void)
         }
     }
     printf("Total counts : %d\n", count);
-    system("pause");
     return 0;
 }
