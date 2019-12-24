@@ -8,7 +8,7 @@ int main(void)
         int a[12] = { 31, 28, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
         printf("请输入一个日期（格式示例2019 03 05）：");
         scanf("%d%d%d", &year, &month, &day); // 输入日期
-        if ( (year % 4 == 0 && year % 100 != 0 || year % 100 == 0 || year % 400 == 0) && month >= 2 )
+        if ( (year % 4 == 0 && year % 100 != 0 || year % 100 == 0 || year % 400 == 0) && month > 2 )
         // 判断是不是闰年，月份是不是大于2月
         {
                 days = days + day;
